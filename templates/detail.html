@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ entry.title }}</h2>
+<div class="date">{{ entry.date }}</div>
+<div style="margin-top: 20px; white-space: pre-wrap;">{{ entry.content }}</div>
+
+<div style="margin-top: 30px;">
+    <a href="{{ url_for('edit', entry_id=entry.id) }}">Редактировать</a>
+    <form method="POST" action="{{ url_for('delete', entry_id=entry.id) }}" style="display:inline;">
+        <button type="submit" class="delete-btn">Удалить</button>
+    </form>
+    <a href="{{ url_for('index') }}">На главную</a>
+</div>
+{% endblock %}

@@ -1,0 +1,152 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Шапка и навигация */
+header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-form {
+    margin-top: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 6px;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Карточки записей */
+.entry-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fafafa;
+}
+
+.entry-card h3 {
+    margin-top: 0;
+}
+
+.entry-card .date {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.entry-card .actions {
+    margin-top: 10px;
+}
+
+.entry-card .actions a,
+.entry-card .actions button {
+    margin-right: 10px;
+}
+
+/* Формы */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+.cancel-link {
+    margin-left: 15px;
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка удаления (стилизованная под ссылку) */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1em;
+    padding: 0;
+}
+
+.delete-btn:hover {
+    color: #c82333;
+}
+
+/* Подвал */
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.9em;
+    text-align: center;
+}

@@ -1,1 +1,19 @@
-# personal-diary_Galiyanov_Ilyas
+# Личный дневник
+
+Веб-приложение для ведения личного дневника на Flask.
+
+## Технологии
+- Python
+- Flask
+- JSON (хранение данных)
+
+## Запуск
+```bash
+pip install flask
+python app.py
+
+---
+
+### 3. `entries.json`
+```json
+[]

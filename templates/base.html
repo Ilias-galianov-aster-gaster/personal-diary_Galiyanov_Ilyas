@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный дневник</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Личный дневник</h1>
+            <nav>
+                <a href="{{ url_for('index') }}">Главная</a>
+                <a href="{{ url_for('add') }}">Новая запись</a>
+                <a href="{{ url_for('filter_week') }}">За неделю</a>
+            </nav>
+            <div class="search-form">
+                <form action="{{ url_for('search') }}" method="GET">
+                    <input type="text" name="q" placeholder="Поиск по заголовку...">
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>© 2026 Личный дневник. Автор: Галиянов Ильяс</p>
+        </footer>
+    </div>
+</body>
+</html>
